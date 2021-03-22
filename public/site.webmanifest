@@ -1,0 +1,19 @@
+{
+    "name": "Ian Owira",
+    "short_name": "IO - About",
+    "icons": [
+        {
+            "src": "../resources/images/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "../resources/images/favicon/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fde8cd",
+    "background_color": "#fde8cd",
+    "display": "standalone"
+}

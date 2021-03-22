@@ -1,0 +1,29 @@
+{
+  "name": "ian.owira.co.za",
+  "version": "1.0.0",
+  "description": "CV of Ian Owira",
+  "main": "dist/index.html",
+  "private": true,
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Owira",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.0-nightly.2253",
+    "@parcel/transformer-webmanifest": "^2.0.0-nightly.2253",
+    "autoprefixer": "^10.2.5",
+    "parcel": "^2.0.0-nightly.629",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "dependencies": {
+    "alpinejs": "^2.8.1",
+    "html2pdf.js": "^0.9.2"
+  }
+}

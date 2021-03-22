@@ -1,0 +1,124 @@
+body {
+  background: linear-gradient(to bottom, #fde8cd, #9a8194) no-repeat;
+  color: #9a8194;
+}
+
+a {
+  transition: color 0.15s ease-in;
+}
+
+.icon {
+  fill: #9a8194;
+}
+
+.highlighted-link {
+  position: relative;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.highlighted-link::after {
+  background-color: #7eca9c;
+  bottom: 0;
+  content: " ";
+  display: block;
+  height: 50%;
+  left: 7px;
+  opacity: 0.5;
+  position: absolute;
+  transition: all 0.15s ease-in-out;
+  width: calc(100%);
+  z-index: -1;
+}
+
+.highlighted-link:hover {
+  color: #9a8194;
+}
+
+.highlighted-link:hover::after {
+  left: -7.5px;
+  opacity: 1;
+  width: calc(100% + 15px);
+}
+
+.main-bg-i {
+  position: relative;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-wrapper {
+  position: relative;
+}
+
+.floating-head {
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+.floating-head a {
+  display: block;
+}
+
+.floating-head img {
+  max-width: 100%;
+  height: auto;
+}
+
+.floating-head img:hover {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links li:first-child {
+  padding-left: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+}
+
+.heading {
+  position: relative;
+  z-index: 1;
+}
+
+.heading::after {
+  background-color: #c6a9a3;
+  bottom: 0;
+  content: " ";
+  display: block;
+  height: 50%;
+  left: 7px;
+  opacity: 0.5;
+  position: absolute;
+  transition: all 0.15s ease-in-out;
+  width: calc(100%);
+  z-index: -1;
+}
+
+
+#download-cv {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background-color: #9a8194;
+  color: white;
+}
