@@ -222,12 +222,16 @@
       </div>
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48207701-2"></script>
     <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', '266513087', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-48207701-2');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 
   </body>
 </html>
