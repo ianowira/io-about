@@ -13,7 +13,7 @@
     "ncp": "ncp ./public/sitemap.xml ./dist/sitemap.xml",
     "clean": "rimraf .parcel-cache .cache dist",
     "start": "npm-run-all -s clean parcel:serve",
-    "build": "npm-run-all -s clean parcel:build npc",
+    "build": "npm-run-all -s clean parcel:build ncp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ian Owira",
