@@ -8,7 +8,7 @@
     "main": false
   },
   "scripts": {
-    "parcel serve": "parcel public/index.html",
+    "parcel:serve": "parcel public/index.html",
     "parcel:build": "parcel build public/index.html",
     "ncp": "ncp ./public/sitemap.xml ./dist/sitemap.xml",
     "clean": "rimraf .parcel-cache .cache dist",
