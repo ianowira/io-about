@@ -121,13 +121,3 @@ a {
   background-color: #9a8194;
   color: white;
 }
-
-.banner {
-  background-color: #141321;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.banner a {
-  display: block;
-}

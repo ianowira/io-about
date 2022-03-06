@@ -1,5 +1,3 @@
-import 'html2pdf.js';
-
 window.addEventListener('load', function () {
   function addScript(url) {
     var script = document.createElement('script');
