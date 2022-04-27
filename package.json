@@ -31,7 +31,6 @@
     "tailwindcss": "^2.0.4"
   },
   "dependencies": {
-    "alpinejs": "^2.8.1",
-    "npc": "0.0.1"
+    "alpinejs": "^2.8.1"
   }
 }
