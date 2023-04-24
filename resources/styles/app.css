@@ -120,6 +120,7 @@ a {
   right: 2.5rem;
   background-color: #9a8194;
   color: white;
+  display: none;
 }
 
 @media print {
