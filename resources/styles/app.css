@@ -8,7 +8,7 @@ a {
 }
 
 .icon {
-  fill: #9a8194;
+  color: #9a8194;
 }
 
 .highlighted-link {
@@ -120,4 +120,47 @@ a {
   right: 2.5rem;
   background-color: #9a8194;
   color: white;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+  }
+
+  .icon {
+    color: #000;
+  }
+  .floating-head,
+  .heading::after,
+  #download-cv {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-bg-i,
+  body {
+    background: #000;
+    color: #fff;
+  }
+
+  .icon {
+    color: #38bdf8;
+  }
+
+  #download-cv {
+    background-color: #38bdf8;
+  }
+
+  .heading::after {
+    background-color: #1e293c;
+  }
+
+  .highlighted-link:hover {
+    color: #fff;
+  }
+
+  .highlighted-link::after {
+    background-color: #6a91e3;
+  }
 }
