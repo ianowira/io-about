@@ -14,11 +14,12 @@ window.addEventListener('load', function () {
 
     homeEl.classList.add("printing");
 
-    html2pdf(homeEl, {
+    html2pdf().set({
       filename:     'ian-owira-cv.pdf',
       enableLinks: true,
-      jsPDF:        {  format: 'A4' }
-    });
+      image:        { type: 'jpeg', quality: 1 },
+      jsPDF:        { unit: 'cm', format: 'letter', orientation: 'portrait' }
+    }).from(homeEl).save();
 
     setTimeout(function() {
       homeEl.classList.remove("printing");
