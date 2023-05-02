@@ -18,7 +18,8 @@ window.addEventListener('load', function () {
       filename:     'ian-owira-cv.pdf',
       enableLinks: true,
       image:        { type: 'jpeg', quality: 1 },
-      jsPDF:        { unit: 'cm', format: 'letter', orientation: 'portrait' }
+      jsPDF:        { unit: 'cm', format: 'letter', orientation: 'portrait' },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
     }).from(homeEl).save();
 
     setTimeout(function() {
