@@ -41,7 +41,7 @@
     "vitest": "5.0.1"
   },
   "dependencies": {
-    "alpinejs": "2.8.1"
+    "alpinejs": "3.17.2"
   },
   "config": {
     "commitizen": {
