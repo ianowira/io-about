@@ -1,0 +1,11 @@
+# Only run the wizard for a plain `git commit`.
+# Skip when a source is set: -m/-F (message), -t (template),
+# merge, squash, or -c/-C/--amend (commit).
+if [ -n "$2" ]; then
+  exit 0
+fi
+
+# Run the interactive prompt only if it's a direct, interactive git commit
+if exec < /dev/tty 2>/dev/null; then
+  npx cz --hook || true
+fi

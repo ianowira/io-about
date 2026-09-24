@@ -1,0 +1,2 @@
+corepack pnpm test
+corepack pnpm lint
