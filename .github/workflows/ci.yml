@@ -47,14 +47,10 @@ jobs:
       - name: Run ${{ matrix.task }}
         run: pnpm run ${{ matrix.task }}
 
-  # 3. Build Application (dependent on codegen)
+  # 3. Build Application
   build:
     needs: install
     runs-on: ubuntu-latest
-    env:
-      API_ENDPOINT: ${{ secrets.API_ENDPOINT }}
-      WP_USERNAME: ${{ secrets.WP_USERNAME }}
-      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
       - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320
@@ -64,7 +60,5 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
-      - name: Run Codegen
-        run: pnpm run codegen
       - name: Build Application
         run: pnpm run build
