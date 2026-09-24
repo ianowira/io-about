@@ -1,73 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <!-- My awesome webpage starts here!! -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ian Owira</title>
+    <title>Ian Owira's Homepage</title>
     <meta name="description" content="An all things internet enthusiast. A Full stack web developer based from Durban - South Africa">
     <link rel="apple-touch-icon" sizes="180x180" href="../resources/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../resources/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../resources/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
-    <link rel="mask-icon" href="../resources/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#fde8cd">
-    <meta name="theme-color" content="#fde8cd">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Google Tag Manager -->
-    <script type="module">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-KL75MPG');</script>
-      <!-- End Google Tag Manager -->
-    <script type="module" src="../app.js"></script>
+    
+    <!-- Importing my script, hope it doesn't break everything -->
+    <script type="module" src="../app.ts"></script>
+    
+    <style>
+      /* CSS is so hard why doesn't my text center easily??? */
+      body {
+        background-color: #C0C0C0;
+        color: #000000;
+        font-family: "Times New Roman", Times, serif;
+      }
+      /* Links! So cool!! */
+      a:link { color: #0000FF; text-decoration: underline; }
+      a:visited { color: #800080; }
+      a:active { color: #FF0000; }
+      
+      .container {
+        width: 800px;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        border: 4px outset #C0C0C0;
+        padding: 20px;
+      }
+      .header-box {
+        text-align: center;
+        border: 4px inset #C0C0C0;
+        background-color: #000080;
+        color: #FFFFFF;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      /* Comic Sans is the best font ever made dont @ me */
+      h1 { font-family: "Comic Sans MS", cursive, sans-serif; }
+      
+      .nav-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .nav-table td {
+        border: 2px outset #C0C0C0;
+        background-color: #C0C0C0;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+      }
+      hr {
+        border: 0;
+        height: 2px;
+        background-color: #808080;
+        color: #808080;
+      }
+      .content { font-size: 18px; line-height: 1.5; }
+    </style>
   </head>
-  <body class="p-8 font-custom">
-    <div class="bg-white dark:bg-black p-5 lg:p-0 main-bg-i">
-      <div class="max-w-5xl lg:p-10 mx-auto main-wrapper" id="home">
-
-        <div class="floating-head">
-          <img src="../resources/images/io-head-80x80.png" width="80" height="80" alt="Ian's head">
-        </div>
-
-        <h1 class="text-5xl font-bold mb-10">Ian Owira</h1>
-
-        <ul class="my-5 flex items-center gap-2">
-          <li class="p-1">
-            <a href="https://linkedin.com/in/ian-owira" target="_blank" class="underline">LinkedIn</a>
-          </li>
-          <li class="p-1">
-            &bull;
-          </li>
-          <li class="p-1">
-            <a href="https://github.com/ianowira" target="_blank" class="underline">Github</a>
-          </li>
-        </ul>
-        
-        <div class="mb-10">
-          <p class="text-lg py-2">Greetings,</p>
-          <p class="text-lg py-2">I am a full-stack software engineer and an all-things-internet enthusiast. Over the past few years, I have focused on the eCommerce industry, delivering reliable and scalable solutions for online stores.</p>
-          <p class="text-lg py-2">My career began as a graphic designer, where I harnessed my creativity to design and print for my brand at the time, I Am Nameless (IAN). It didn't take long for me to realize the importance of having an online presence, which steered me toward a career in software engineering.</p>
-          <p class="text-lg py-2">While there isn't a single technology stack that defines me as an expert, I am passionate about exploring various technologies and contributing to the internet in meaningful ways.</p>
-          <p class="text-lg py-2">Cheers 🍺</p>
-        </div>
-
+  <body>
+    <!-- THE MAIN WRAPPER THINGY -->
+    <div class="container">
+      
+      <div class="header-box">
+        <!-- I just figured out how to do this, MARQUEE IS AWESOME! -->
+        <marquee scrollamount="5"><h1>Welcome to Ian Owira's Official Homepage!!!</h1></marquee>
       </div>
-    </div>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL75MPG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48207701-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-48207701-2');
-    </script>
+      <!-- Centering images is literally impossible without this tag -->
+      <center>
+        <img src="../resources/images/io-head-80x80.png" alt="Ian's head" border="2">
+      </center>
+      <br>
+
+      <!-- Tables make the best layouts, div is overrated -->
+      <table class="nav-table">
+        <tr>
+          <td><a href="#about">About Me</a></td>
+          <td><a href="https://linkedin.com/in/ian-owira" target="_blank">My LinkedIn</a></td>
+          <td><a href="https://github.com/ianowira" target="_blank">My GitHub</a></td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <!-- All my text goes here -->
+      <div class="content" id="about">
+        <!-- The JS puts the greeting here I think -->
+        <h3 id="greeting" style="color: #FF0000;"></h3>
+        <p>
+          I am a <b>full-stack software engineer</b> and an <i>all-things-internet enthusiast</i>. Over the past few years, I have focused on the eCommerce industry, delivering reliable and scalable solutions for online stores.
+        </p>
+        <p>
+          My career began as a graphic designer, where I harnessed my creativity to design and print for my brand at the time, <u>I Am Nameless (IAN)</u>. It didn't take long for me to realize the importance of having an online presence, which steered me toward a career in software engineering.
+        </p>
+        <p>
+          While there isn't a single technology stack that defines me as an expert, I am passionate about exploring various technologies and contributing to the internet in meaningful ways.
+        </p>
+        <center>
+          <p style="font-family: Courier New, Courier, monospace;">
+            <b>Cheers =)</b>
+          </p>
+        </center>
+      </div>
+
+      <hr>
+
+      <!-- footer zone -->
+      <center>
+        <small>Best viewed in Netscape Navigator 4.0 or Internet Explorer 4.0 at 800x600 resolution.</small><br>
+        <small><i>Copyright &copy; 1998 Ian Owira - DO NOT STEAL MY CODE PLS</i></small>
+      </center>
+    </div>
   </body>
 </html>
