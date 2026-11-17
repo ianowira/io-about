@@ -27,7 +27,7 @@
     "@parcel/packager-raw-url": "2.16.4",
     "@parcel/transformer-webmanifest": "2.16.4",
     "@parcel/transformer-xml": "2.16.4",
-    "@tailwindcss/postcss": "^4.3.4",
+    "@tailwindcss/postcss": "^4.3.5",
     "autoprefixer": "10.6.2",
     "commitizen": "4.3.2",
     "copyfiles": "2.4.1",
@@ -37,8 +37,8 @@
     "parcel": "2.16.4",
     "postcss": "8.5.32",
     "rimraf": "6.1.4",
-    "tailwindcss": "4.3.4",
-    "vitest": "5.0.5"
+    "tailwindcss": "4.3.5",
+    "vitest": "5.1.0"
   },
   "dependencies": {
     "alpinejs": "3.17.5"
